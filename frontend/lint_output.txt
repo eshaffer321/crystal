@@ -1,0 +1,577 @@
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/App.tsx
+   26:10   warning  Unexpected any. Specify a different type                                                                          @typescript-eslint/no-explicit-any
+   35:62   warning  Unexpected any. Specify a different type                                                                          @typescript-eslint/no-explicit-any
+   73:9    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+   86:7    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+   99:9    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  115:11   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  123:13   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  129:13   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  140:9    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  145:11   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  149:13   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  153:15   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  160:15   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  164:13   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  173:9    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  190:6    warning  React Hook useEffect has a missing dependency: 'isDiscordOpen'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  197:7    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  212:47   warning  Unexpected any. Specify a different type                                                                          @typescript-eslint/no-explicit-any
+  213:7    warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  249:105  warning  Unexpected any. Specify a different type                                                                          @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/CombinedDiffView.tsx
+   66:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  131:6   warning  React Hook useEffect has a missing dependency: 'selectedExecutions.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  158:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  170:15  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  174:15  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  179:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  183:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  192:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  222:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  238:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  254:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+  268:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                             no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/CommitModeSettings.tsx
+  50:24  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  57:6   warning  React Hook useEffect has missing dependencies: 'localSettings', 'mode', and 'onChange'. Either include them or remove the dependency array. If 'onChange' changes too often, find the parent component that defines it and wrap that definition in useCallback  react-hooks/exhaustive-deps
+  66:24  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/CreateSessionDialog.tsx
+   50:50  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   58:22  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   78:22  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   90:58  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  104:66  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  113:24  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  120:6   warning  React Hook useEffect has a missing dependency: 'formData.baseBranch'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  153:33  warning  Unnecessary escape character: \[                                                                                        no-useless-escape
+  247:21  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  405:34  warning  'error' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/DiffViewer.tsx
+   13:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   17:3   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   26:3   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  131:3   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  179:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  198:17  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  222:21  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/DiscordPopup.tsx
+   17:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   19:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   25:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  150:23  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/DraggableProjectTreeView.tsx
+   117:23  warning  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead                                                                                                                react-hooks/exhaustive-deps
+   150:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   154:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   160:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   248:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   251:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   258:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   261:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   268:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   273:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   278:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   283:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   288:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   349:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   409:6   warning  React Hook useEffect has missing dependencies: 'loadProjectsWithSessions', 'navigateToSessions', 'pendingAutoSelect', 'projectsWithSessions', and 'setActiveSession'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+   558:21  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+   628:34  warning  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead                                                                                                                react-hooks/exhaustive-deps
+   661:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   674:15  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   675:29  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+   704:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   723:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   733:23  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+   769:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   771:21  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+   802:14  warning  'error' is defined but never used                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   803:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   835:21  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+   849:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+   885:21  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  1037:25  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  1052:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+  1056:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+  1076:23  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  1128:25  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  1196:23  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  1206:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+  1210:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                         no-console
+  1233:23  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  1270:23  warning  Unexpected any. Specify a different type                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/FileEditor.tsx
+  171:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                           no-console
+  183:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                           no-console
+  186:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                           no-console
+  226:32  warning  Unexpected any. Specify a different type                                                                    @typescript-eslint/no-explicit-any
+  583:20  warning  React Hook useCallback received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/FilePathAutocomplete.tsx
+  174:6  warning  React Hook useCallback has a missing dependency: 'getInputElement'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  331:6  warning  React Hook useEffect has a missing dependency: 'getInputElement'. Either include it or remove the dependency array    react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/JsonMessageView.tsx
+   8:10  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:18  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/MainProcessLogger.tsx
+  16:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  19:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/MarkdownPreview.tsx
+  25:18  warning  'node' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  25:57  warning  Unexpected any. Specify a different type                                @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/MermaidRenderer.tsx
+  41:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:18  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/MonacoDiffViewer.tsx
+   39:35   warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+   51:3    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+   52:3    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+   75:5    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  125:5    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  186:7    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  258:7    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  262:51   warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+  298:107  warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+  306:26   warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+  347:15   warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  351:11   warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  371:13   warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  381:16   warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+  391:6    warning  React Hook useCallback has a missing dependency: 'file'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  416:9    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  440:9    warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  497:47   warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+  499:46   warning  Unexpected any. Specify a different type                                                                   @typescript-eslint/no-explicit-any
+  503:17   warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+  525:11   warning  Unexpected console statement. Only these console methods are allowed: warn, error                          no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/PermissionDialog.tsx
+  11:10  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  17:77  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/ProjectDashboard.tsx
+  174:6   warning  React Hook useEffect has a missing dependency: 'fetchDashboardData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  196:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                      no-console
+  199:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                      no-console
+  201:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                      no-console
+  365:38  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                      no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/ProjectSelector.tsx
+   83:14  warning  'error' is defined but never used                                                  @typescript-eslint/no-unused-vars
+   84:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  118:21  warning  Unexpected any. Specify a different type                                           @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/ProjectTreeView.tsx
+   43:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                               no-console
+   49:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                               no-console
+   62:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                               no-console
+  135:6   warning  React Hook useEffect has a missing dependency: 'loadProjectsWithSessions'. Either include it or remove the dependency array     react-hooks/exhaustive-deps
+  163:6   warning  React Hook useEffect has a missing dependency: 'projectsWithSessions.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  254:21  warning  Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  277:14  warning  'error' is defined but never used                                                                                               @typescript-eslint/no-unused-vars
+  278:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                               no-console
+  304:21  warning  Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/ProjectView.tsx
+  119:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  243:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  302:16  warning  'err' is defined but never used                                                    @typescript-eslint/no-unused-vars
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/PromptNavigation.tsx
+   34:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+   54:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+   76:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  106:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  136:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                 no-console
+  179:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/SessionListItem.tsx
+   50:9  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                        no-console
+  213:7  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                        no-console
+  222:7  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                        no-console
+  266:6  warning  React Hook useCallback has unnecessary dependencies: 'isDeleting', 'session.isMainRepo', 'session.name', and 'session.worktreePath'. Either exclude them or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/SessionView.tsx
+  28:50  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  31:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  48:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  72:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/Settings.tsx
+   32:10  warning  '_config' is assigned a value but never used                                                                    @typescript-eslint/no-unused-vars
+   56:6   warning  React Hook useEffect has a missing dependency: 'fetchConfig'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+   77:14  warning  'err' is defined but never used                                                                                 @typescript-eslint/no-unused-vars
+  498:79  warning  Unexpected any. Specify a different type                                                                        @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/Sidebar.tsx
+  28:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  30:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  32:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  35:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  39:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  43:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  45:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/StravuConnection.tsx
+  86:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/StravuStatusIndicator.tsx
+  108:16  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/UpdateDialog.tsx
+   37:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   58:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   65:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   79:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  106:19  warning  Unexpected any. Specify a different type                                           @typescript-eslint/no-explicit-any
+  120:19  warning  Unexpected any. Specify a different type                                           @typescript-eslint/no-explicit-any
+  134:19  warning  Unexpected any. Specify a different type                                           @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/Welcome.tsx
+   20:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   22:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+   28:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  167:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  173:19  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/RichOutputView.tsx
+   13:22  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   14:34  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   14:54  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   17:11  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   19:18  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   35:19  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   43:34  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+   49:11  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  184:45  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  205:60  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  206:59  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  228:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                       no-console
+  241:47  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  382:49  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  420:6   warning  React Hook useCallback has a missing dependency: 'transformMessages'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  436:82  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  440:87  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  560:53  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  615:52  warning  Unexpected any. Specify a different type                                                                                @typescript-eslint/no-explicit-any
+  970:6   warning  React Hook useMemo has a missing dependency: 'renderMessage'. Either include it or remove the dependency array          react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/RichOutputWithSidebar.tsx
+  39:55  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/SessionHeader.tsx
+  40:33  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/SessionInput.tsx
+  42:5  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                                                                                                                                                                                               no-console
+  48:6  warning  React Hook useEffect has missing dependencies: 'activeSession.model' and 'activeSession.name'. Either include them or remove the dependency array. If 'setSelectedModel' needs the current value of 'activeSession.model', you can also switch to useReducer instead of useState and read 'activeSession.model' in the reducer  react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/SessionInputWithImages.tsx
+   76:6   warning  React Hook useEffect has a missing dependency: 'activeSession.model'. Either include it or remove the dependency array. If 'setSelectedModel' needs the current value of 'activeSession.model', you can also switch to useReducer instead of useState and read 'activeSession.model' in the reducer  react-hooks/exhaustive-deps
+  136:6   warning  React Hook useCallback has a missing dependency: 'processFile'. Either include it or remove the dependency array                                                                                                                                                                                     react-hooks/exhaustive-deps
+  149:6   warning  React Hook useCallback has a missing dependency: 'processFile'. Either include it or remove the dependency array                                                                                                                                                                                     react-hooks/exhaustive-deps
+  348:37  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                             @typescript-eslint/no-explicit-any
+  411:39  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                             @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/ThinkingPlaceholder.tsx
+  103:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/session/ViewTabs.tsx
+  17:33  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  91:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/ui/Dropdown.tsx
+  149:6   warning  React Hook useEffect has a missing dependency: 'handleClose'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  163:6   warning  React Hook useEffect has a missing dependency: 'handleClose'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  332:18  warning  Unexpected any. Specify a different type                                                                        @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/components/ui/Textarea.tsx
+  13:56  warning  'fullWidth' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/contexts/ContextMenuContext.tsx
+  11:12  warning  Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  16:51  warning  Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  23:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  42:70  warning  Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/contexts/ThemeContext.tsx
+  55:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/hooks/useIPCEvents.ts
+    8:39  warning  Unexpected any. Specify a different type                                                                                                                        @typescript-eslint/no-explicit-any
+    8:49  warning  Unexpected any. Specify a different type                                                                                                                        @typescript-eslint/no-explicit-any
+   64:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+   82:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+   90:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  125:96  warning  Unexpected any. Specify a different type                                                                                                                        @typescript-eslint/no-explicit-any
+  126:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  145:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  147:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  165:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  180:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  187:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  239:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                                               no-console
+  265:6   warning  React Hook useEffect has missing dependencies: 'throttledGitStatusLoading' and 'throttledGitStatusUpdated'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/hooks/useNotifications.ts
+   49:67  warning  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  117:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                    no-console
+  175:6   warning  React Hook useEffect has a missing dependency: 'showNotification'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/hooks/useSessionView.ts
+    87:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   103:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   120:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   136:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   142:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   150:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   174:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   191:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   196:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   211:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   216:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   226:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   231:21  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+   233:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   251:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   303:6   warning  React Hook useEffect has a missing dependency: 'activeSession.output'. Either include it or remove the dependency array             react-hooks/exhaustive-deps
+   319:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   325:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   350:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   357:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   365:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   395:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   403:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   413:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   422:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   433:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   439:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   442:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   450:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   453:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   461:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   465:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   473:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   480:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   503:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   509:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   520:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   522:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   543:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   554:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   557:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   562:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   590:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   616:6   warning  React Hook useCallback has an unnecessary dependency: 'theme'. Either exclude it or remove the dependency array                     react-hooks/exhaustive-deps
+   619:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   620:9   error    Unexpected constant condition                                                                                                       no-constant-condition
+   620:9   error    Unexpected constant truthiness on the left-hand side of a `&&` expression                                                           no-constant-binary-expression
+   631:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   638:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   652:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   658:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   664:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   680:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   688:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   693:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   698:13  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   713:16  warning  'err' is defined but never used                                                                                                     @typescript-eslint/no-unused-vars
+   733:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   742:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   752:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   841:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   855:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   862:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   905:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   920:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   959:9   error    Unexpected constant condition                                                                                                       no-constant-condition
+   959:9   error    Unexpected constant truthiness on the left-hand side of a `&&` expression                                                           no-constant-binary-expression
+   959:9   error    Unexpected constant truthiness on the left-hand side of a `&&` expression                                                           no-constant-binary-expression
+   966:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+   971:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   972:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   976:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+   983:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1022:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+  1042:6   warning  React Hook useEffect has missing dependencies: 'activeSession' and 'startTime'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  1066:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+  1103:6   warning  React Hook useEffect has a missing dependency: 'activeSession'. Either include it or remove the dependency array                    react-hooks/exhaustive-deps
+  1105:55  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1109:6   warning  React Hook useCallback has a missing dependency: 'navigateToPromptInTerminal'. Either include it or remove the dependency array     react-hooks/exhaustive-deps
+  1111:47  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1166:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1168:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1173:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1182:51  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1183:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1185:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1193:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1230:62  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1240:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1347:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1351:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1353:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1356:26  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1357:41  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1371:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1374:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1384:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1413:45  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1434:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1439:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1443:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1446:26  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1447:41  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1461:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1464:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1474:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1505:41  warning  Unexpected any. Specify a different type                                                                                            @typescript-eslint/no-explicit-any
+  1531:14  warning  'error' is defined but never used                                                                                                   @typescript-eslint/no-unused-vars
+  1601:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+  1635:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error                                                   no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/stores/sessionStore.ts
+   76:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  101:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  117:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  143:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  155:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  159:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  170:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  185:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  187:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  191:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  197:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  209:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  220:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  239:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  307:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  311:25  warning  Unexpected any. Specify a different type                                           @typescript-eslint/no-explicit-any
+  321:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  326:9   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  335:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  406:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  410:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  416:5   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/types/electron.d.ts
+    3:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   13:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   13:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   40:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  111:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  113:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  140:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  157:26  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  158:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  163:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  182:33  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  183:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  196:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  197:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  198:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  199:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  200:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  201:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  202:75  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  205:87  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  208:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  211:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  212:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  215:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  217:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  221:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  222:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  223:58  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  224:50  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  225:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  241:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  266:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  266:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  267:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  268:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/types/session.ts
+  11:17  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  71:18  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/api.ts
+    4:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   41:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  269:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  279:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  350:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  371:30  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  376:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  384:48  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  456:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  461:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/debounce.ts
+  1:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  1:66  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  6:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  6:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/formatters.ts
+   9:47  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  35:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  58:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/gitStatusLogger.ts
+  33:7   warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  42:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  49:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  57:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  63:11  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/performanceUtils.ts
+  13:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  13:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:56  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/terminalTheme.ts
+  101:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  102:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  103:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  104:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  110:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  111:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  112:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  114:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  115:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  116:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+/Users/erishaff/code/crystal/worktrees/theme-audit/frontend/src/utils/toolFormatter.ts
+    2:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   26:10  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   46:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   46:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   58:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   86:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  154:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  362:58  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  370:46  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  391:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  392:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  408:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  452:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  453:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 470 problems (5 errors, 465 warnings)
+

@@ -121,17 +121,56 @@ export class ExecutionTracker extends EventEmitter {
       
       if (!commitResult.success && commitResult.error) {
         // Add error to session output so users can see what went wrong
-        const timestamp = formatForDisplay(new Date());
-        const errorMessage = `\r\n\x1b[36m[${timestamp}]\x1b[0m \x1b[1m\x1b[41m\x1b[37m ❌ GIT COMMIT FAILED \x1b[0m\r\n` +
-                           `\x1b[91mFailed to create commit during Claude Code execution.\x1b[0m\r\n` +
-                           `\x1b[91mError: ${commitResult.error}\x1b[0m\r\n\r\n` +
-                           `\x1b[93m⚠️  Changes remain uncommitted. You may need to fix the issues and commit manually.\x1b[0m\r\n\r\n`;
+        const commitErrorMessage = {
+          type: 'system',
+          subtype: 'autocommit_error',
+          timestamp: new Date().toISOString(),
+          mode: commitMode,
+          error: commitResult.error,
+          message: 'Failed to create commit during Claude Code execution. Changes remain uncommitted. You may need to fix the issues and commit manually.'
+        };
+        
+        console.log(`[ExecutionTracker] Adding autocommit error message for session ${sessionId}:`, commitErrorMessage);
         
         this.sessionManager.addSessionOutput(sessionId, {
-          type: 'stderr',
-          data: errorMessage,
+          type: 'json',
+          data: commitErrorMessage,
           timestamp: new Date()
         });
+      } else if (commitResult.success && commitMode !== 'disabled') {
+        // Add success message to session output for successful commits
+        if (commitMode === 'checkpoint') {
+          const commitSuccessMessage = {
+            type: 'system',
+            subtype: 'autocommit_success',
+            timestamp: new Date().toISOString(),
+            mode: 'checkpoint',
+            commit_hash: commitResult.commitHash,
+            message: 'Checkpoint commit created successfully. Changes have been automatically committed during execution.'
+          };
+          
+          console.log(`[ExecutionTracker] Adding autocommit success message for session ${sessionId}:`, commitSuccessMessage);
+          
+          this.sessionManager.addSessionOutput(sessionId, {
+            type: 'json',
+            data: commitSuccessMessage,
+            timestamp: new Date()
+          });
+        } else if (commitMode === 'structured') {
+          const structuredModeMessage = {
+            type: 'system',
+            subtype: 'autocommit_mode',
+            timestamp: new Date().toISOString(),
+            mode: 'structured',
+            message: 'Structured mode active. Claude will handle commits when appropriate.'
+          };
+          
+          this.sessionManager.addSessionOutput(sessionId, {
+            type: 'json',
+            data: structuredModeMessage,
+            timestamp: new Date()
+          });
+        }
       }
       
       // For structured mode, we may need to wait for Claude to create the commit
@@ -145,6 +184,35 @@ export class ExecutionTracker extends EventEmitter {
         
         if (!structuredCommitResult.success) {
           this.logger?.warn(`Structured commit not detected: ${structuredCommitResult.error}`);
+          const timeoutMessage = {
+            type: 'system',
+            subtype: 'autocommit_timeout',
+            timestamp: new Date().toISOString(),
+            mode: 'structured',
+            error: structuredCommitResult.error || 'Timeout waiting for commit',
+            message: 'Claude did not create a commit within the expected timeframe. Claude may have chosen not to commit, or may need more time.'
+          };
+          
+          this.sessionManager.addSessionOutput(sessionId, {
+            type: 'json',
+            data: timeoutMessage,
+            timestamp: new Date()
+          });
+        } else if (structuredCommitResult.commitHash) {
+          const claudeCommitMessage = {
+            type: 'system',
+            subtype: 'autocommit_claude_success',
+            timestamp: new Date().toISOString(),
+            mode: 'structured',
+            commit_hash: structuredCommitResult.commitHash,
+            message: 'Claude successfully created a commit according to your structured mode settings.'
+          };
+          
+          this.sessionManager.addSessionOutput(sessionId, {
+            type: 'json',
+            data: claudeCommitMessage,
+            timestamp: new Date()
+          });
         }
       }
       

@@ -13,7 +13,8 @@ export const SwitchSimple = forwardRef<
   SwitchProps
 >(({ className, label, icon, size = 'md', id, ...props }, ref) => {
   // Generate a unique ID if none provided
-  const switchId = id || useId();
+  const generatedId = useId();
+  const switchId = id || generatedId;
   const sizes = {
     sm: {
       track: 'h-4 w-8',

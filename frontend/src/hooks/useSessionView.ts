@@ -615,37 +615,7 @@ export const useSessionView = (
     }
   }, [theme, activeSession]);
 
-  useEffect(() => {
-    console.log(`[useSessionView] Terminal initialization effect - viewMode: ${viewMode}, terminalRef.current: ${!!terminalRef.current}`);
-    if (false && terminalRef.current) { // Disabled - output view removed
-      initTerminal(terminalRef, terminalInstance, fitAddon, false);
-      
-      // After terminal is initialized, trigger a check for loading output
-      if (activeSession && !terminalInstance.current) {
-        // Check less frequently and with a maximum number of attempts
-        let attempts = 0;
-        const maxAttempts = 50; // 5 seconds maximum wait
-        const checkInterval = setInterval(() => {
-          attempts++;
-          if (terminalInstance.current) {
-            console.log(`[useSessionView] Terminal initialized, checking if output needs to be loaded`);
-            clearInterval(checkInterval);
-            // Force a re-evaluation of whether to load output
-            if (activeSession && activeSession.status !== 'initializing') {
-              loadOutputContent(activeSession.id);
-            }
-          } else if (attempts >= maxAttempts) {
-            console.log(`[useSessionView] Terminal initialization timed out, loading output anyway`);
-            clearInterval(checkInterval);
-            // Try to load output even without terminal
-            if (activeSession && activeSession.status !== 'initializing') {
-              loadOutputContent(activeSession.id);
-            }
-          }
-        }, 100);
-      }
-    }
-  }, [viewMode, terminalRef, initTerminal, activeSession, loadOutputContent]);  
+  // Terminal initialization disabled - output view removed  
   // Pre-initialize script terminal when session becomes active
   useEffect(() => {
     if (activeSession && scriptTerminalRef.current && !scriptTerminalInstance.current) {
@@ -954,16 +924,7 @@ export const useSessionView = (
     return () => observer.disconnect();
   }, [terminalRef, viewMode]);
 
-  // Trigger terminal resize when session status changes (for padding adjustment)
-  useEffect(() => {
-    if (false && fitAddon.current && activeSession) { // Output view removed
-      // Small delay to ensure DOM updates have completed
-      const timer = setTimeout(() => {
-        fitAddon.current?.fit();
-      }, 50);
-      return () => clearTimeout(timer);
-    }
-  }, [activeSession?.status, viewMode]);
+  // Terminal resize disabled - output view removed
 
   useEffect(() => {
     // Add a small delay to ensure CSS has propagated

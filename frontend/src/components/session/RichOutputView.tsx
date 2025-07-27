@@ -33,6 +33,8 @@ interface ConversationMessage {
     cost?: number;
     systemSubtype?: string;
     sessionInfo?: any;
+    commitMode?: string;
+    commitHash?: string;
   };
 }
 
@@ -335,6 +337,30 @@ export const RichOutputView = React.forwardRef<{ scrollToPrompt: (promptIndex: n
           }
         });
         
+      } else if (msg.type === 'system' && msg.subtype?.startsWith('autocommit_')) {
+        // Handle autocommit-related messages
+        console.log('RichOutputView: Found autocommit message:', msg);
+        transformed.push({
+          id: msg.id || `autocommit-${i}-${msg.timestamp}`,
+          role: 'system',
+          timestamp: msg.timestamp,
+          segments: [{ 
+            type: 'system_info', 
+            info: {
+              subtype: msg.subtype,
+              mode: msg.mode,
+              commit_hash: msg.commit_hash,
+              error: msg.error,
+              message: msg.message
+            }
+          }],
+          metadata: {
+            systemSubtype: msg.subtype,
+            commitMode: msg.mode,
+            commitHash: msg.commit_hash
+          }
+        });
+        
       } else if (msg.type === 'result') {
         // Handle execution result messages - especially errors
         if (msg.is_error && msg.result) {
@@ -397,6 +423,7 @@ export const RichOutputView = React.forwardRef<{ scrollToPrompt: (promptIndex: n
       const allMessages = [...userPrompts];
       if (outputResponse.success && outputResponse.data && Array.isArray(outputResponse.data)) {
         // JSON messages are already in the correct format from getJsonMessages
+        console.log('RichOutputView: All JSON messages:', outputResponse.data.filter(m => m.type === 'system'));
         allMessages.push(...outputResponse.data);
       }
       
@@ -813,6 +840,110 @@ export const RichOutputView = React.forwardRef<{ scrollToPrompt: (promptIndex: n
                     <span className="font-medium">Ready to continue!</span> {helpMessage}
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        );
+      } else if (message.metadata?.systemSubtype?.startsWith('autocommit_')) {
+        // Render autocommit-related messages
+        const infoSegment = message.segments.find(seg => seg.type === 'system_info');
+        const info = infoSegment?.type === 'system_info' ? infoSegment.info : {};
+        const subtype = message.metadata.systemSubtype;
+        
+        // Determine styling based on subtype
+        let bgColor, borderColor, iconBg, iconColor, icon, title, titleColor;
+        
+        if (subtype === 'autocommit_success') {
+          bgColor = 'bg-status-success/10';
+          borderColor = 'border-status-success/30';
+          iconBg = 'bg-status-success/20';
+          iconColor = 'text-status-success';
+          titleColor = 'text-status-success';
+          title = 'Checkpoint Commit Created';
+          icon = <CheckCircle className="w-5 h-5" />;
+        } else if (subtype === 'autocommit_claude_success') {
+          bgColor = 'bg-interactive/10';
+          borderColor = 'border-interactive/30';
+          iconBg = 'bg-interactive/20';
+          iconColor = 'text-interactive-on-dark';
+          titleColor = 'text-interactive-on-dark';
+          title = 'Claude Commit Detected';
+          icon = <Bot className="w-5 h-5" />;
+        } else if (subtype === 'autocommit_mode') {
+          bgColor = 'bg-surface-tertiary/50';
+          borderColor = 'border-border-primary';
+          iconBg = 'bg-surface-interactive';
+          iconColor = 'text-text-secondary';
+          titleColor = 'text-text-primary';
+          title = 'Structured Mode Active';
+          icon = <Settings2 className="w-5 h-5" />;
+        } else if (subtype === 'autocommit_timeout') {
+          bgColor = 'bg-status-warning/10';
+          borderColor = 'border-status-warning/30';
+          iconBg = 'bg-status-warning/20';
+          iconColor = 'text-status-warning';
+          titleColor = 'text-status-warning';
+          title = 'Commit Timeout';
+          icon = <Clock className="w-5 h-5" />;
+        } else if (subtype === 'autocommit_error') {
+          bgColor = 'bg-status-error/10';
+          borderColor = 'border-status-error/30';
+          iconBg = 'bg-status-error/20';
+          iconColor = 'text-status-error';
+          titleColor = 'text-status-error';
+          title = 'Commit Failed';
+          icon = <XCircle className="w-5 h-5" />;
+        }
+        
+        return (
+          <div
+            key={message.id}
+            className={`
+              rounded-lg transition-all ${bgColor} border ${borderColor}
+              ${settings.compactMode ? 'p-3' : 'p-4'}
+              ${needsExtraSpacing ? 'mt-4' : ''}
+            `}
+          >
+            <div className="flex items-start gap-3">
+              <div className={`rounded-full p-2 ${iconBg} ${iconColor}`}>
+                {icon}
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className={`font-semibold ${titleColor}`}>{title}</span>
+                  <span className="text-sm text-text-tertiary">
+                    {formatDistanceToNow(parseTimestamp(message.timestamp))}
+                  </span>
+                  {info.mode && (
+                    <span className="text-xs px-2 py-1 bg-surface-secondary text-text-secondary rounded">
+                      {info.mode} mode
+                    </span>
+                  )}
+                </div>
+                
+                <div className="text-sm text-text-primary mb-3">
+                  {info.message}
+                </div>
+                
+                {/* Show commit hash if available */}
+                {info.commit_hash && (
+                  <div className="flex items-center gap-2 p-2 bg-surface-secondary rounded border border-border-primary">
+                    <span className="text-xs text-text-secondary font-medium">Commit:</span>
+                    <code className="text-xs font-mono text-text-primary bg-surface-tertiary px-2 py-1 rounded">
+                      {info.commit_hash}
+                    </code>
+                  </div>
+                )}
+                
+                {/* Show error details if available */}
+                {info.error && (
+                  <div className="mt-3 p-3 bg-surface-secondary rounded border border-border-primary">
+                    <div className="text-xs text-text-secondary font-medium mb-1">Error Details:</div>
+                    <div className="text-sm font-mono text-text-primary whitespace-pre-wrap">
+                      {info.error}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -596,6 +596,11 @@ export function registerSessionHandlers(ipcMain: IpcMain, services: AppServices)
         }));
       
       console.log(`[IPC] Found ${jsonMessages.length} JSON messages for session ${sessionId}`);
+      // Log any autocommit messages
+      const autocommitMessages = jsonMessages.filter(msg => msg.type === 'system' && msg.subtype?.startsWith('autocommit_'));
+      if (autocommitMessages.length > 0) {
+        console.log(`[IPC] Found ${autocommitMessages.length} autocommit messages:`, autocommitMessages);
+      }
       return { success: true, data: jsonMessages };
     } catch (error) {
       console.error('Failed to get JSON messages:', error);
