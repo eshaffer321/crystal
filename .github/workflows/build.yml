@@ -2,7 +2,7 @@ name: Build and Publish Canary
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, fork-testing-main ]  # Add fork-testing-main for fork testing
   pull_request:
     branches: [ main ]
   workflow_dispatch:
