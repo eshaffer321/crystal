@@ -1,0 +1,89 @@
+{
+  "appId": "com.stravu.crystal",
+  "productName": "Crystal",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "main/dist/**/*",
+    "frontend/dist/**/*",
+    "package.json",
+    "node_modules/**/*",
+    "!node_modules/@anthropic-ai/claude-code/vendor/**/*.jar",
+    "build/**/*",
+    "LICENSE",
+    "NOTICES"
+  ],
+  "npmRebuild": true,
+  "buildDependenciesFromSource": false,
+  "asar": true,
+  "asarUnpack": [
+    "node_modules/**/*.node",
+    "!node_modules/@anthropic-ai/claude-code/vendor/**",
+    "main/dist/services/mcpPermissionBridge.js",
+    "main/dist/services/mcpPermissionBridgeStandalone.js",
+    "main/dist/services/**/*.js"
+  ],
+  "mac": {
+    "category": "public.app-category.developer-tools",
+    "icon": "main/assets/icon.icns",
+    "hardenedRuntime": false,
+    "gatekeeperAssess": false,
+    "signIgnore": [
+      "node_modules/@anthropic-ai/claude-code/vendor/.*\\.jar$"
+    ],
+    "notarize": false,
+    "target": [
+      {
+        "target": "default",
+        "arch": "universal"
+      }
+    ],
+    "artifactName": "${productName}-${version}-macOS-universal.${ext}"
+  },
+  "linux": {
+    "target": [
+      {
+        "target": "deb",
+        "arch": [
+          "x64"
+        ]
+      },
+      {
+        "target": "AppImage",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "category": "Development",
+    "icon": "main/assets/icon.png",
+    "desktop": {
+      "Name": "Crystal",
+      "Comment": "Claude Code Commander for managing multiple Claude Code instances",
+      "Categories": "Development;IDE;",
+      "StartupWMClass": "crystal"
+    }
+  },
+  "deb": {
+    "depends": [
+      "libgtk-3-0",
+      "libnotify4",
+      "libnss3",
+      "libxss1",
+      "libxtst6",
+      "xdg-utils",
+      "libatspi2.0-0",
+      "libuuid1"
+    ],
+    "artifactName": "${productName}-${version}-linux-${arch}.deb"
+  },
+  "appImage": {
+    "artifactName": "${productName}-${version}-linux-${arch}.${ext}"
+  },
+  "publish": {
+    "provider": "github",
+    "owner": "eshaffer321",
+    "repo": "crystal"
+  }
+}
