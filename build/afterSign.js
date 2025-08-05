@@ -9,6 +9,12 @@ exports.default = async function(context) {
     return;
   }
 
+  // Skip afterSign operations for canary builds to avoid path resolution issues
+  if (process.env.CANARY_BUILD === 'true') {
+    console.log('AfterSign: Canary build detected, skipping all afterSign operations');
+    return;
+  }
+
   // Check if we have signing certificates - if not, skip signing-related operations
   const hasSigningCredentials = process.env.CSC_LINK || process.env.CSC_KEY_PASSWORD;
   if (!hasSigningCredentials) {
