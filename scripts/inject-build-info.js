@@ -35,11 +35,13 @@ try {
 const isCanaryBuild = process.env.CANARY_BUILD === 'true';
 let version = packageJson.version;
 
-if (isCanaryBuild) {
-  // For canary builds, append -canary.{git-hash}
+if (isCanaryBuild && !version.includes('-canary.')) {
+  // For canary builds, append -canary.{git-hash} only if not already a canary version
   const shortHash = gitCommit.includes('(modified)') ? gitCommit.split(' ')[0] : gitCommit;
   version = `${packageJson.version}-canary.${shortHash}`;
-  console.log(`Canary build detected, using version: ${version}`);
+  console.log(`Canary build detected, creating version: ${version}`);
+} else if (isCanaryBuild) {
+  console.log(`Canary build detected, using existing version: ${version}`);
 }
 
 // Create build info
